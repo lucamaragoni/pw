@@ -56,7 +56,7 @@ nav ul li a:hover {
     background-image: url('images/bg2.jpg');
     background-size: cover;
     background-position: bottom;
-    height: 55vh;
+    height: 65vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
