@@ -60,9 +60,9 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: top;
+    align-items: center;
     text-align: center;
-    color: white;
+    color: var(--primary-color);
 }
 
 /* Stili per la sezione dei report */
