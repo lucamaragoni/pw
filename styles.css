@@ -1,21 +1,22 @@
-/* Definizione delle variabili per i colori principali */
+/* Definizione delle variabili CSS per i colori principali del tema */
 :root {
-    --primary-color: #0058a3;
-    --secondary-color: #ffdb00;
-    --text-color: #333;
-    --background-color: #f7f7f7;
+    --primary-color: #0058a3; /* Blu IKEA */
+    --secondary-color: #ffdb00; /* Giallo IKEA */
+    --text-color: #333; /* Colore testo principale */
+    --background-color: #f7f7f7; /* Colore di sfondo chiaro */
 }
 
-/* Reset di base e impostazioni generali */
+/* Reset CSS di base per uniformare lo stile tra i browser */
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; /* Include padding e bordo nella larghezza totale */
     margin: 0;
     padding: 0;
 }
 
+/* Stili di base per il corpo del documento */
 body {
-    font-family: 'Noto Sans', sans-serif;
-    line-height: 1.6;
+    font-family: 'Noto Sans', sans-serif; /* Font principale */
+    line-height: 1.6; /* Altezza della linea per una migliore leggibilità */
     color: var(--text-color);
     background-color: var(--background-color);
 }
@@ -27,36 +28,36 @@ header {
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* Usa flexbox per il layout */
+    justify-content: space-between; /* Distribuisce lo spazio tra gli elementi */
+    align-items: center; /* Allinea verticalmente gli elementi */
 }
 
 nav ul {
     display: flex;
-    list-style-type: none;
+    list-style-type: none; /* Rimuove i bullet points dalla lista */
 }
 
 nav ul li {
-    margin-left: 1rem;
+    margin-left: 1rem; /* Spazio tra gli elementi del menu */
 }
 
 nav ul li a {
     color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    text-decoration: none; /* Rimuove la sottolineatura dei link */
+    transition: color 0.3s ease; /* Transizione fluida per il cambio di colore */
 }
 
 nav ul li a:hover {
-    color: var(--secondary-color);
+    color: var(--secondary-color); /* Cambia colore al passaggio del mouse */
 }
 
 /* Stili per la sezione hero */
 .hero {
-    background-image: url('images/background.png');
-    background-size: cover;
-    background-position: top;
-    height: 65vh;
+    background-image: url('/images/background.jpg');
+    background-size: cover; /* Copre l'intera area */
+    background-position: up;
+    height: 65vh; /* 65% dell'altezza della viewport */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,24 +71,24 @@ nav ul li a:hover {
     padding: 2rem;
 }
 
-/* Griglia per i report */
+/* Griglia per i report usando CSS Grid */
 .report-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Colonne responsive */
+    gap: 2rem; /* Spazio tra le card */
 }
 
 /* Stili per le card dei report */
 .report-card {
     background-color: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    border-radius: 8px; /* Angoli arrotondati */
+    overflow: hidden; /* Nasconde il contenuto che esce dai bordi */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombra sottile */
+    transition: transform 0.3s ease; /* Animazione al passaggio del mouse */
 }
 
 .report-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Solleva leggermente la card al passaggio del mouse */
 }
 
 .report-card img {
@@ -111,7 +112,7 @@ nav ul li a:hover {
 }
 
 .download-btn:hover {
-    background-color: #ffc800;
+    background-color: #ffc800; /* Colore più scuro al passaggio del mouse */
 }
 
 /* Stili per la sezione "Chi Siamo" */
@@ -122,13 +123,13 @@ nav ul li a:hover {
 }
 
 .sustainability-icons {
-    font-size: 3rem;
+    font-size: 3rem; /* Dimensione grande per le icone */
     color: var(--primary-color);
     margin-top: 1rem;
 }
 
 .sustainability-icons i {
-    margin: 0 1rem;
+    margin: 0 1rem; /* Spazio tra le icone */
 }
 
 /* Stili per il footer */
@@ -141,7 +142,7 @@ footer {
 .footer-content {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Permette il wrapping su schermi piccoli */
 }
 
 .footer-section {
@@ -165,13 +166,13 @@ footer {
     text-align: center;
     margin-top: 2rem;
     padding-top: 1rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Linea sottile sopra il copyright */
 }
 
 /* Media queries per il design responsivo */
 @media screen and (max-width: 768px) {
     nav {
-        flex-direction: column;
+        flex-direction: column; /* Cambia la direzione del flex su schermi piccoli */
     }
 
     nav ul {
@@ -201,4 +202,3 @@ a:focus, button:focus, input:focus {
     outline: 2px solid var(--secondary-color);
     outline-offset: 2px;
 }
-

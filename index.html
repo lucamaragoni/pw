@@ -1,33 +1,39 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <!-- Collegamento al file favicon.png -->
+<!DOCTYPE html> <!-- Dichiara che questo è un documento HTML5 -->
+
+<html lang="it"> <!-- Inizia il documento HTML, specificando l'italiano come lingua principale -->
+
+<head> <!-- Contiene metadati e collegamenti a risorse esterne -->
+
+    <!-- Collega l'icona favicon, che apparirà nella scheda del browser -->
     <link rel="icon" type="image/png" href="images/favicon.png">
-    
-    <!-- Metadati di base -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Report di Sostenibilità IKEA - Download</title>
-    
-    <!-- Metadati per SEO -->
-    <meta name="description" content="Scarica i report di sostenibilità di IKEA e scopri il nostro impegno per l'ambiente e l'economia circolare">
-    <meta name="keywords" content="IKEA, sostenibilità, report, download, ambiente, economia circolare">
-    
-    <!-- Collegamento al file CSS esterno -->
+   
+    <!-- Metadati essenziali per il corretto rendering e funzionamento della pagina -->
+    <meta charset="UTF-8"> <!-- Specifica la codifica dei caratteri come UTF-8, supportando caratteri internazionali -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Assicura il corretto scaling su dispositivi mobili -->
+    <title>Report di Sostenibilità IKEA - Download</title> <!-- Imposta il titolo della pagina, visibile nella scheda del browser -->
+   
+    <!-- Metadati per l'ottimizzazione dei motori di ricerca (SEO) -->
+    <meta name="description" content="Scarica i report di sostenibilità di IKEA e scopri il nostro impegno per l'ambiente e l'economia circolare"> <!-- Fornisce una breve descrizione della pagina per i risultati di ricerca -->
+    <meta name="keywords" content="IKEA, sostenibilità, report, download, ambiente, economia circolare"> <!-- Elenca parole chiave rilevanti per i motori di ricerca -->
+   
+    <!-- Collega il file CSS esterno per gli stili della pagina -->
     <link rel="stylesheet" href="styles.css">
-    
-    <!-- Inclusione di Font Awesome per le icone -->
+   
+    <!-- Carica la libreria Font Awesome per l'utilizzo di icone -->
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+
 </head>
-<body>
-    <!-- Header con navigazione -->
+
+<body> <!-- Contiene il contenuto visibile della pagina web -->
+
+    <!-- Header: contiene la navigazione principale del sito -->
     <header>
         <nav>
             <div class="logo">
-                <!-- Logo IKEA -->
-                <img src="https://www.ikea.com/global/assets/logos/brand/ikea.svg" alt="Logo IKEA" width="100" height="40">
+                <!-- Logo IKEA: l'attributo alt fornisce un testo alternativo per l'accessibilità -->
+                <img src="/images/logo.svg" alt="Logo IKEA" width="100" height="40">
             </div>
-            <!-- Menu di navigazione -->
+            <!-- Menu di navigazione: strutturato come una lista non ordinata per l'accessibilità -->
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#reports">Report</a></li>
@@ -37,80 +43,85 @@
         </nav>
     </header>
 
-    <main>
-        <!-- Sezione hero con titolo principale -->
+    <main> <!-- Contiene il contenuto principale della pagina -->
+        <!-- Sezione hero: introduce il tema principale della pagina -->
         <section id="home" class="hero">
-            <h1>Scopri il nostro impegno per un futuro sostenibile</h1>
-            <p>Report di Sostenibilità IKEA</p>
+            <h1>Report di Sostenibilità IKEA</h1> <!-- Titolo principale della pagina -->
+            <p>Scopri il nostro impegno per un futuro sostenibile</p> <!-- Sottotitolo o slogan -->
         </section>
 
-        <!-- Sezione dei report -->
+        <!-- Sezione dei report: mostra i report disponibili per il download -->
         <section id="reports" class="reports">
-            <h2>I Nostri Report di sostenibilità</h2>
-                       <!-- Griglia dei report -->
+            <h2>I Nostri Report</h2>
+            <!-- Griglia dei report: organizza i report in una struttura a griglia -->
             <div class="report-grid">
-                <!-- Esempio di una card per un report -->
-                             <div class="report-card">
-                    <img src="images/card_2023.png" alt="Copertina Report 2023" width="200" height="280">
+                <!-- Card per un report -->
+                <div class="report-card">
+                    <img src="/images/card_2023.png" alt="Copertina Report 2023" width="200" height="280">
                     <h3>Report 2023</h3>
-                    <a href="report/ikea-report-sostenibilita-2023.pdf" class="download-btn" download aria-label="Scarica Report 2023">
-                        Scarica <i class="fas fa-download"></i>
-                    </a>
-                </div>
-               <div class="report-card">
-                    <img src="images/card_2022.png" alt="Copertina Report 2022" width="200" height="280">
-                    <h3>Report 2022</h3>
-                    <a href="report/ikea-report-sostenibilita-2022.pdf" class="download-btn" download aria-label="Scarica Report 2022">
-                        Scarica <i class="fas fa-download"></i>
-                    </a>
-                </div>
-               <div class="report-card">
-                    <img src="images/card_2021.png" alt="Copertina Report 2021" width="200" height="280">
-                    <h3>Report 2021</h3>
-                    <a href="report/ikea-report-sostenibilita-2021.pdf" class="download-btn" download aria-label="Scarica Report 2021">
-                        Scarica <i class="fas fa-download"></i>
+                    <!-- Link per il download del report, con attributo download per forzare il download -->
+                    <a href="/report/ikea-report-sostenibilita-2023.pdf" class="download-btn" download aria-label="Scarica Report 2023">
+                        Scarica <i class="fas fa-download"></i> <!-- Icona di download da Font Awesome -->
                     </a>
                 </div>
                 <div class="report-card">
-                    <img src="images/card_2020.png" alt="Copertina Report 2020" width="200" height="280">
-                    <h3>Report 2020</h3>
-                    <a href="report/ikea-report-sostenibilita-2020.pdf" class="download-btn" download aria-label="Scarica Report 2020">
-                        Scarica <i class="fas fa-download"></i>
+                    <img src="/images/card_2022.png" alt="Copertina Report 2022" width="200" height="280">
+                    <h3>Report 2023</h3>
+                    <!-- Link per il download del report, con attributo download per forzare il download -->
+                    <a href="/report/ikea-report-sostenibilita-2022.pdf" class="download-btn" download aria-label="Scarica Report 2022">
+                        Scarica <i class="fas fa-download"></i> <!-- Icona di download da Font Awesome -->
                     </a>
                 </div>
-               <div class="report-card">
-                    <img src="images/card_2019.png" alt="Copertina Report 2019" width="200" height="280">
-                    <h3>Report 2019</h3>
-                    <a href="report/ikea-report-sostenibilita-2019.pdf" class="download-btn" download aria-label="Scarica Report 2019">
-                        Scarica <i class="fas fa-download"></i>
+                <div class="report-card">
+                    <img src="/images/card_2021.png" alt="Copertina Report 2021" width="200" height="280">
+                    <h3>Report 2023</h3>
+                    <!-- Link per il download del report, con attributo download per forzare il download -->
+                    <a href="/report/ikea-report-sostenibilita-2021.pdf" class="download-btn" download aria-label="Scarica Report 2021">
+                        Scarica <i class="fas fa-download"></i> <!-- Icona di download da Font Awesome -->
                     </a>
                 </div>
-               <div class="report-card">
-                    <img src="images/card_2018.png" alt="Copertina Report 2018" width="200" height="280">
-                    <h3>Report 2018</h3>
-                    <a href="report/ikea-report-sostenibilita-2018.pdf" class="download-btn" download aria-label="Scarica Report 2018">
-                        Scarica <i class="fas fa-download"></i>
+                <div class="report-card">
+                    <img src="/images/card_2020.png" alt="Copertina Report 2020" width="200" height="280">
+                    <h3>Report 2023</h3>
+                    <!-- Link per il download del report, con attributo download per forzare il download -->
+                    <a href="/report/ikea-report-sostenibilita-2020.pdf" class="download-btn" download aria-label="Scarica Report 2020">
+                        Scarica <i class="fas fa-download"></i> <!-- Icona di download da Font Awesome -->
                     </a>
                 </div>
-                <!-- Aggiungere altre card per gli altri report -->
+                <div class="report-card">
+                    <img src="/images/card_2019.png" alt="Copertina Report 2019" width="200" height="280">
+                    <h3>Report 2023</h3>
+                    <!-- Link per il download del report, con attributo download per forzare il download -->
+                    <a href="/report/ikea-report-sostenibilita-2019.pdf" class="download-btn" download aria-label="Scarica Report 2019">
+                        Scarica <i class="fas fa-download"></i> <!-- Icona di download da Font Awesome -->
+                    </a>
+                </div>
+                <div class="report-card">
+                    <img src="/images/card_2018.png" alt="Copertina Report 2018" width="200" height="280">
+                    <h3>Report 2023</h3>
+                    <!-- Link per il download del report, con attributo download per forzare il download -->
+                    <a href="/report/ikea-report-sostenibilita-2018.pdf" class="download-btn" download aria-label="Scarica Report 2018">
+                        Scarica <i class="fas fa-download"></i> <!-- Icona di download da Font Awesome -->
+                    </a>
+                </div>
+                <!-- Altre card dei report potrebbero essere aggiunte qui -->
             </div>
         </section>
 
-        <!-- Sezione "Chi Siamo" -->
+        <!-- Sezione "Chi Siamo": fornisce informazioni sull'impegno di IKEA per la sostenibilità -->
         <section id="about" class="about">
             <h2>Il Nostro Impegno per la Sostenibilità</h2>
             <p>In IKEA, crediamo in un futuro sostenibile per tutti. Lavoriamo costantemente per ridurre il nostro impatto ambientale e promuovere l'economia circolare.</p>
             <!-- Icone rappresentative della sostenibilità -->
             <div class="sustainability-icons">
-                <i class="fas fa-recycle" aria-hidden="true"></i>
-                <i class="fas fa-leaf" aria-hidden="true"></i>
-                <i class="fas fa-solar-panel" aria-hidden="true"></i>
+                <i class="fas fa-recycle" aria-hidden="true"></i> <!-- Icona di riciclo -->
+                <i class="fas fa-leaf" aria-hidden="true"></i> <!-- Icona di foglia, rappresentante la natura -->
+                <i class="fas fa-solar-panel" aria-hidden="true"></i> <!-- Icona di pannello solare -->
             </div>
         </section>
     </main>
 
-    <!-- Footer con informazioni di contatto e link utili -->
-    
+    <!-- Footer: contiene informazioni di contatto e link utili -->
     <footer>
         <section id="contact" class="contact">
         <div class="footer-content">
@@ -122,17 +133,16 @@
             <div class="footer-section">
                 <h3>Link Utili</h3>
                 <ul>
-                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                    <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#cookie">Cookie Policy</a></li>
                 </ul>
             </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2025 IKEA. Tutti i diritti riservati.</p>
+            <p>&copy; 2025 IKEA. Tutti i diritti riservati.</p> <!-- copyright -->
         </div>
         </section>
     </footer>
-         
+        
 </body>
 </html>
-
