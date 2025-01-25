@@ -80,6 +80,7 @@ nav ul li a:hover {
 
 /* Stili per le card dei report */
 .report-card {
+    text-align: center;
     background-color: white;
     border-radius: 8px; /* Angoli arrotondati */
     overflow: hidden; /* Nasconde il contenuto che esce dai bordi */
