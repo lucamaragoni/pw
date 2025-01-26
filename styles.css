@@ -61,7 +61,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: right;
+    align-items: anchor-center;
     text-align: center;
     color: var(--primary-color);
 }
