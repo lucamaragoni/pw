@@ -124,13 +124,9 @@ nav ul li a:hover {
 }
 
 .sustainability-icons {
-    font-size: 3rem; /* Dimensione grande per le icone */
+    font-size: 1rem; /* Dimensione per le icone */
     color: var(--primary-color);
     margin-top: 1rem;
-}
-
-.sustainability-icons i {
-    margin: 0 1rem; /* Spazio tra le icone */
 }
 
 /* Stili per il footer */
